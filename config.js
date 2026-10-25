@@ -121,8 +121,8 @@ window.GAME_CONFIG = {
     useCustomSprite: true,
 
     customSprite: {
-      image: "assets/sprites/player.png",   // the PNG exported from Aseprite
-      json:  "assets/sprites/player.json",  // the JSON exported with it (Array or Hash both work)
+      image: "player.png",   // the PNG exported from Aseprite
+      json:  "player.json",  // the JSON exported with it (Array or Hash both work)
       idleTag: "idle",         // name of the Aseprite tag for standing still
       walkTag: "walk",         // name of the Aseprite tag for walking (one animation, mirrored for left)
       // Optional: a separate walk tag for each direction (upper/lower case doesn't matter).
