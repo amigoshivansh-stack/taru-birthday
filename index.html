@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- Makes the game fill the phone screen and stops pinch-zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Happy Birthday, Taru</title>
+
+  <!-- A rounded, cute font from Google Fonts (change it here + in config.js -> ui.fontFamily) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Full-screen, no scrollbars, no text selection while playing */
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #fde8ef;            /* matches colors.background in config.js */
+      touch-action: none;             /* stop the page from scrolling on phones */
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    #game { width: 100vw; height: 100vh; height: 100dvh; }
+  </style>
+</head>
+<body>
+  <!-- Phaser draws the game inside this box -->
+  <div id="game"></div>
+
+  <!-- 1. Phaser 3 game engine, loaded from a CDN (no install needed) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.80.1/phaser.min.js"></script>
+  <!-- 2. Your personal settings (edit this one!) -->
+  <script src="config.js"></script>
+  <!-- 3. The game code -->
+  <script src="main.js"></script>
+</body>
+</html>
